@@ -16,9 +16,10 @@ Features
 
 Roadmap
 -------
-- v.0.1.1:
--- Configure Python, Virtuelenv, Nginx and uWSGI
+* v.0.1.1:
+- Configure Python, Virtuelenv, Nginx and uWSGI
+- Configure shared folders
 
-- v.0.2:
--- Support CentOS
+* v.0.2:
+- Support CentOS
 
