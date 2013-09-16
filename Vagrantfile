@@ -16,11 +16,12 @@ Vagrant.configure("2") do |config|
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.
-  # config.vm.network :forwarded_port, guest: 80, host: 8080
+  config.vm.network :forwarded_port, guest: 80, host: 8080
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
   # config.vm.network :private_network, ip: "192.168.33.10"
+  # config.vm.network :hostonly, ip, '10.100.0.2', :adapter => 2
 
   # Create a public network, which generally matched to bridged network.
   # Bridged networks make the machine appear as another physical device on
@@ -85,9 +86,9 @@ Vagrant.configure("2") do |config|
     chef.add_recipe "git"
     chef.add_recipe "flask"
     chef.add_recipe "nginx"
+    chef.add_recipe "uwsgi"
   
   #   # You may also specify custom JSON attributes:
-  #   chef.json = { :mysql_password => "foo" }
     chef.json = {
          "postgresql" => {
              "password" => {
