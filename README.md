@@ -3,8 +3,11 @@ flask-vagrant-bootstrap v.0.1
 
 Bootstrap empty Flask project using Vagrant and Chef.
 
-Setup develeper environment from one command:
-``` git clone https://github.com/e0ne/flask-vagrant-bootstrap.git && cd flask-vargant-bootstrap && vagrant up```
+Setup developer environment from one command:
+
+```sh
+git clone https://github.com/e0ne/flask-vagrant-bootstrap.git && cd flask-vagrant-bootstrap && vagrant up
+```
 
 
 Features
